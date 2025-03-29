@@ -109,3 +109,7 @@ jobs:
         export ASEPRITE=$PWD/build/bin/aseprite
         cd tests
         $XVFB bash run-tests.sh
+env:
+  SKIA_URL: https://github.com/aseprite/skia/releases/download/m102/Skia-Windows-Release-x64.zip
+  SKIA_DIR: skia
+  BUILD_TYPE: RelWithDebInfo
